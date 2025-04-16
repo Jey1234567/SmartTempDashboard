@@ -1,31 +1,36 @@
-using System.Diagnostics;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using SmartTempDashboard.Models;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
-namespace SmartTempDashboard.Controllers;
-
-public class HomeController : Controller
+namespace SmartTempDashboard.Controllers.Api
 {
-    private readonly ILogger<HomeController> _logger;
-
-    public HomeController(ILogger<HomeController> logger)
+    
+    [Route("api/[controller]/[action]")]
+    [ApiController]
+    public class TemperatureController : ControllerBase
     {
-        _logger = logger;
-    }
+        private readonly TemperatureDBContext _context;
+        public TemperatureController(TemperatureDBContext context)
+        {
+            _context = context;
+        }
 
-    public IActionResult Index()
-    {
-        return View();
-    }
+        [HttpPost]
+        public async Task<IActionResult> TemperaturePost(Temperature temp)
+        {
+            temp.Timestamp = DateTime.UtcNow;
+            _context.Temperatures.Add(temp);
+            await _context.SaveChangesAsync();
 
-    public IActionResult Privacy()
-    {
-        return View();
-    }
-
-    [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
-    public IActionResult Error()
-    {
-        return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
+            //Returns the booking (as JSON) along with a 200 OK status code.
+            return Ok();
+        }
+        [HttpGet]
+        public IActionResult GetData()
+        {
+            var data =  _context.Temperatures.ToList(); 
+            return Ok(data);
+        }
+       
     }
 }

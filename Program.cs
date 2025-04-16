@@ -1,9 +1,26 @@
+using Microsoft.EntityFrameworkCore;
+using Microsoft.OpenApi.Models;
+using SmartTempDashboard.Models;
+using System.Reflection;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+builder.Services.AddDbContext<TemperatureDBContext>(options =>
+{
+    options.UseSqlServer("Server=JEYHANCUTE\\SQLEXPRESS;Database=TemperatureDB;Trusted_Connection=True;TrustServerCertificate=True;");
+});
 
+builder.Services.AddEndpointsApiExplorer();
+builder.Services.AddSwaggerGen(c =>
+{
+    c.SwaggerDoc("v1", new OpenApiInfo { Title = "My API", Version = "v1" });
+});
+builder.Services.AddHttpClient();
 var app = builder.Build();
+
+
 
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())
@@ -17,6 +34,13 @@ app.UseHttpsRedirection();
 app.UseStaticFiles();
 
 app.UseRouting();
+
+app.UseSwagger();
+app.UseSwaggerUI(c =>
+{
+    c.SwaggerEndpoint("/swagger/v1/swagger.json", "My Web API V1");
+    c.RoutePrefix = "swagger"; // Bisa diakses di /swagger
+});
 
 app.UseAuthorization();
 

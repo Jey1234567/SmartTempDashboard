@@ -1,0 +1,28 @@
+[
+  {
+    "ContainingType": "SmartTempDashboard.Controllers.Api.TemperatureController",
+    "Method": "GetData",
+    "RelativePath": "api/Temperature/GetData",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SmartTempDashboard.Controllers.Api.TemperatureController",
+    "Method": "TemperaturePost",
+    "RelativePath": "api/Temperature/TemperaturePost",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "temp",
+        "Type": "SmartTempDashboard.Models.Temperature",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]
