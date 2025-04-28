@@ -4,31 +4,31 @@
 @model List<SmartTempDashboard.Models.Temperature>
 
 
-<h2>Table</h2>
-
-<pre>@ViewBag.Data</pre>
-<canvas id="suhuChart" width="800" height="400"></canvas>
-
+<h2>Graph</h2>
+<canvas id="TemperatureChart" width="800" height="400"></canvas>
+<!--Use Chartjs and SignalR for dynamic graph-->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/microsoft-signalr/7.0.5/signalr.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-
 <script>
-    // Data dari C# ke JavaScript
-    const suhuData = @Html.Raw(System.Text.Json.JsonSerializer.Serialize(Model));
+    window.onload= function () {
+    var suhuData = @Html.Raw(System.Text.Json.JsonSerializer.Serialize(Model));
 
-    const labels = suhuData.map(item => new Date(item.Timestamp).toLocaleTimeString());
-    const values = suhuData.map(item => item.Temp);
+     var latest = suhuData.slice(-30); // get last 30 entries
+     var labels = latest.map(x => new Date(x.Timestamp).toLocaleTimeString());
+     var values = latest.map(x => x.Temp);
 
-    const ctx = document.getElementById('suhuChart').getContext('2d');
-    new Chart(ctx, {
+    var ctx = document.getElementById('TemperatureChart').getContext('2d');
+    window.myChart = new Chart(ctx, {
         type: 'line',
         data: {
-            labels: labels,
+            labels: labels, // empty initially
             datasets: [{
-                label: 'Suhu (°C)',
+                label: 'Temperature (°C)',
                 data: values,
-                borderWidth: 2,
+                borderColor: 'rgb(75, 192, 192)',
                 fill: false,
-                tension: 0.1
+                tension: 0.4
             }]
         },
         options: {
@@ -40,4 +40,37 @@
             }
         }
     });
+
+    // Connect to SignalR Hub
+        const connection = new signalR.HubConnectionBuilder()
+        .withUrl("/charthub")
+        .build();
+
+    connection.on("ReceiveTemperature", function (temp) {
+        
+        var timestamp=new Date(temp.timestamp).toLocaleTimeString();
+          
+        // Update your chart dynamically here
+        addDataToChart(timestamp, temp.temp);
+    });
+
+    connection.start();
+
+    function addDataToChart(timestamp, temperature) {
+     
+        
+        myChart.data.labels.push(timestamp);
+        myChart.data.datasets[0].data.push(temperature);
+        
+        if (myChart.data.labels.length > 30) {
+            myChart.data.labels.shift();
+            myChart.data.datasets[0].data.shift();
+        }
+
+        myChart.update();
+    }
+
+    }
+
 </script>
+

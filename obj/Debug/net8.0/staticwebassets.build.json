@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "AzusW3dVaB/kICoJkOZSysGfuPvjj1JZpxSPANY15aI=",
+  "Hash": "EEr1SKg2W7/rX/mUL0Obrlsh4p0A7FoGTctyNkvEMGc=",
   "Source": "SmartTempDashboard",
   "BasePath": "_content/SmartTempDashboard",
   "Mode": "Default",
@@ -16,6 +16,195 @@
     }
   ],
   "Assets": [
+    {
+      "Identity": "C:\\Users\\amina\\.nuget\\packages\\syncfusion.blazor.charts\\29.1.39\\staticwebassets\\scripts\\sf-accumulation-chart.min.js",
+      "SourceId": "Syncfusion.Blazor.Charts",
+      "SourceType": "Package",
+      "ContentRoot": "C:\\Users\\amina\\.nuget\\packages\\syncfusion.blazor.charts\\29.1.39\\staticwebassets\\",
+      "BasePath": "_content/Syncfusion.Blazor.Charts",
+      "RelativePath": "scripts/sf-accumulation-chart.min.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "gzhkbvypps",
+      "Integrity": "DL+/AlZ6TfFabbySHteyes5nmQiAUGjxdItcQBi8Nbc=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\amina\\.nuget\\packages\\syncfusion.blazor.charts\\29.1.39\\staticwebassets\\scripts\\sf-accumulation-chart.min.js"
+    },
+    {
+      "Identity": "C:\\Users\\amina\\.nuget\\packages\\syncfusion.blazor.charts\\29.1.39\\staticwebassets\\scripts\\sf-chart.min.js",
+      "SourceId": "Syncfusion.Blazor.Charts",
+      "SourceType": "Package",
+      "ContentRoot": "C:\\Users\\amina\\.nuget\\packages\\syncfusion.blazor.charts\\29.1.39\\staticwebassets\\",
+      "BasePath": "_content/Syncfusion.Blazor.Charts",
+      "RelativePath": "scripts/sf-chart.min.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "lgumspuiap",
+      "Integrity": "tUNa2yCcoHdfV9yYOKm25LG1DTTAHpVMgPtHOSQchzg=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\amina\\.nuget\\packages\\syncfusion.blazor.charts\\29.1.39\\staticwebassets\\scripts\\sf-chart.min.js"
+    },
+    {
+      "Identity": "C:\\Users\\amina\\.nuget\\packages\\syncfusion.blazor.core\\29.1.39\\staticwebassets\\scripts\\popup.min.js",
+      "SourceId": "Syncfusion.Blazor.Core",
+      "SourceType": "Package",
+      "ContentRoot": "C:\\Users\\amina\\.nuget\\packages\\syncfusion.blazor.core\\29.1.39\\staticwebassets\\",
+      "BasePath": "_content/Syncfusion.Blazor.Core",
+      "RelativePath": "scripts/popup.min.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "yiktawnjns",
+      "Integrity": "1vilJfPf3+uGoYi1douM75iTfu/8MsbSSECH5MN15cA=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\amina\\.nuget\\packages\\syncfusion.blazor.core\\29.1.39\\staticwebassets\\scripts\\popup.min.js"
+    },
+    {
+      "Identity": "C:\\Users\\amina\\.nuget\\packages\\syncfusion.blazor.core\\29.1.39\\staticwebassets\\scripts\\popupsbase.min.js",
+      "SourceId": "Syncfusion.Blazor.Core",
+      "SourceType": "Package",
+      "ContentRoot": "C:\\Users\\amina\\.nuget\\packages\\syncfusion.blazor.core\\29.1.39\\staticwebassets\\",
+      "BasePath": "_content/Syncfusion.Blazor.Core",
+      "RelativePath": "scripts/popupsbase.min.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "sysg4otwid",
+      "Integrity": "pKr0AoVoemoP7bIAuaF6lO0sKFhGydmxKVIq1Vi+Z/A=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\amina\\.nuget\\packages\\syncfusion.blazor.core\\29.1.39\\staticwebassets\\scripts\\popupsbase.min.js"
+    },
+    {
+      "Identity": "C:\\Users\\amina\\.nuget\\packages\\syncfusion.blazor.core\\29.1.39\\staticwebassets\\scripts\\sf-svg-export.min.js",
+      "SourceId": "Syncfusion.Blazor.Core",
+      "SourceType": "Package",
+      "ContentRoot": "C:\\Users\\amina\\.nuget\\packages\\syncfusion.blazor.core\\29.1.39\\staticwebassets\\",
+      "BasePath": "_content/Syncfusion.Blazor.Core",
+      "RelativePath": "scripts/sf-svg-export.min.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "0b1xc29ndt",
+      "Integrity": "JFefsNh2yTWAI9cPbT81TcHlI0G/ymn/l+QPTu5l/Eo=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\amina\\.nuget\\packages\\syncfusion.blazor.core\\29.1.39\\staticwebassets\\scripts\\sf-svg-export.min.js"
+    },
+    {
+      "Identity": "C:\\Users\\amina\\.nuget\\packages\\syncfusion.blazor.core\\29.1.39\\staticwebassets\\scripts\\svgbase.min.js",
+      "SourceId": "Syncfusion.Blazor.Core",
+      "SourceType": "Package",
+      "ContentRoot": "C:\\Users\\amina\\.nuget\\packages\\syncfusion.blazor.core\\29.1.39\\staticwebassets\\",
+      "BasePath": "_content/Syncfusion.Blazor.Core",
+      "RelativePath": "scripts/svgbase.min.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "ebngw0l1mg",
+      "Integrity": "Copw0b5W1Ixp52X80cARk/2aZMy07y3JSBIybAnfcAQ=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\amina\\.nuget\\packages\\syncfusion.blazor.core\\29.1.39\\staticwebassets\\scripts\\svgbase.min.js"
+    },
+    {
+      "Identity": "C:\\Users\\amina\\.nuget\\packages\\syncfusion.blazor.core\\29.1.39\\staticwebassets\\scripts\\syncfusion-blazor.min.js",
+      "SourceId": "Syncfusion.Blazor.Core",
+      "SourceType": "Package",
+      "ContentRoot": "C:\\Users\\amina\\.nuget\\packages\\syncfusion.blazor.core\\29.1.39\\staticwebassets\\",
+      "BasePath": "_content/Syncfusion.Blazor.Core",
+      "RelativePath": "scripts/syncfusion-blazor.min.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "qvvogk8cj5",
+      "Integrity": "mugELBrmi7H6ys7+wuOVK1Vkv8DHINPvChKubLUeu70=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\amina\\.nuget\\packages\\syncfusion.blazor.core\\29.1.39\\staticwebassets\\scripts\\syncfusion-blazor.min.js"
+    },
+    {
+      "Identity": "C:\\Users\\amina\\.nuget\\packages\\syncfusion.blazor.core\\29.1.39\\staticwebassets\\scripts\\syncfusion-blazor-base.min.js",
+      "SourceId": "Syncfusion.Blazor.Core",
+      "SourceType": "Package",
+      "ContentRoot": "C:\\Users\\amina\\.nuget\\packages\\syncfusion.blazor.core\\29.1.39\\staticwebassets\\",
+      "BasePath": "_content/Syncfusion.Blazor.Core",
+      "RelativePath": "scripts/syncfusion-blazor-base.min.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "ijyue7vok3",
+      "Integrity": "orsPHLWmoRWO1De1XEAERnWWkCpJpJZtShmeIEEScPI=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\amina\\.nuget\\packages\\syncfusion.blazor.core\\29.1.39\\staticwebassets\\scripts\\syncfusion-blazor-base.min.js"
+    },
+    {
+      "Identity": "C:\\Users\\amina\\.nuget\\packages\\syncfusion.blazor.data\\29.1.39\\staticwebassets\\scripts\\data.min.js",
+      "SourceId": "Syncfusion.Blazor.Data",
+      "SourceType": "Package",
+      "ContentRoot": "C:\\Users\\amina\\.nuget\\packages\\syncfusion.blazor.data\\29.1.39\\staticwebassets\\",
+      "BasePath": "_content/Syncfusion.Blazor.Data",
+      "RelativePath": "scripts/data.min.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "dnjmjdm2mo",
+      "Integrity": "B8zwnvK60ijeNNoCaiDbjR50r3bLA+DaXfbUL4/ELWs=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\amina\\.nuget\\packages\\syncfusion.blazor.data\\29.1.39\\staticwebassets\\scripts\\data.min.js"
+    },
     {
       "Identity": "C:\\Users\\amina\\source\\repos\\Spend\\SmartTempDashboard\\obj\\Debug\\net8.0\\scopedcss\\bundle\\SmartTempDashboard.styles.css",
       "SourceId": "SmartTempDashboard",
@@ -1320,6 +1509,744 @@
     }
   ],
   "Endpoints": [
+    {
+      "Route": "_content/Syncfusion.Blazor.Charts/scripts/sf-accumulation-chart.min.gzhkbvypps.js",
+      "AssetFile": "C:\\Users\\amina\\.nuget\\packages\\syncfusion.blazor.charts\\29.1.39\\staticwebassets\\scripts\\sf-accumulation-chart.min.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "20437"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"DL+/AlZ6TfFabbySHteyes5nmQiAUGjxdItcQBi8Nbc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 21 Apr 2025 09:36:57 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "gzhkbvypps"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-DL+/AlZ6TfFabbySHteyes5nmQiAUGjxdItcQBi8Nbc="
+        },
+        {
+          "Name": "label",
+          "Value": "_content/Syncfusion.Blazor.Charts/scripts/sf-accumulation-chart.min.js"
+        }
+      ]
+    },
+    {
+      "Route": "_content/Syncfusion.Blazor.Charts/scripts/sf-accumulation-chart.min.js",
+      "AssetFile": "C:\\Users\\amina\\.nuget\\packages\\syncfusion.blazor.charts\\29.1.39\\staticwebassets\\scripts\\sf-accumulation-chart.min.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "20437"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"DL+/AlZ6TfFabbySHteyes5nmQiAUGjxdItcQBi8Nbc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 21 Apr 2025 09:36:57 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-DL+/AlZ6TfFabbySHteyes5nmQiAUGjxdItcQBi8Nbc="
+        }
+      ]
+    },
+    {
+      "Route": "_content/Syncfusion.Blazor.Charts/scripts/sf-chart.min.js",
+      "AssetFile": "C:\\Users\\amina\\.nuget\\packages\\syncfusion.blazor.charts\\29.1.39\\staticwebassets\\scripts\\sf-chart.min.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "239435"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"tUNa2yCcoHdfV9yYOKm25LG1DTTAHpVMgPtHOSQchzg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 21 Apr 2025 09:36:57 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-tUNa2yCcoHdfV9yYOKm25LG1DTTAHpVMgPtHOSQchzg="
+        }
+      ]
+    },
+    {
+      "Route": "_content/Syncfusion.Blazor.Charts/scripts/sf-chart.min.lgumspuiap.js",
+      "AssetFile": "C:\\Users\\amina\\.nuget\\packages\\syncfusion.blazor.charts\\29.1.39\\staticwebassets\\scripts\\sf-chart.min.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "239435"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"tUNa2yCcoHdfV9yYOKm25LG1DTTAHpVMgPtHOSQchzg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 21 Apr 2025 09:36:57 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "lgumspuiap"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-tUNa2yCcoHdfV9yYOKm25LG1DTTAHpVMgPtHOSQchzg="
+        },
+        {
+          "Name": "label",
+          "Value": "_content/Syncfusion.Blazor.Charts/scripts/sf-chart.min.js"
+        }
+      ]
+    },
+    {
+      "Route": "_content/Syncfusion.Blazor.Core/scripts/popup.min.js",
+      "AssetFile": "C:\\Users\\amina\\.nuget\\packages\\syncfusion.blazor.core\\29.1.39\\staticwebassets\\scripts\\popup.min.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "16205"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"1vilJfPf3+uGoYi1douM75iTfu/8MsbSSECH5MN15cA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 21 Apr 2025 09:36:57 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-1vilJfPf3+uGoYi1douM75iTfu/8MsbSSECH5MN15cA="
+        }
+      ]
+    },
+    {
+      "Route": "_content/Syncfusion.Blazor.Core/scripts/popup.min.yiktawnjns.js",
+      "AssetFile": "C:\\Users\\amina\\.nuget\\packages\\syncfusion.blazor.core\\29.1.39\\staticwebassets\\scripts\\popup.min.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "16205"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"1vilJfPf3+uGoYi1douM75iTfu/8MsbSSECH5MN15cA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 21 Apr 2025 09:36:57 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "yiktawnjns"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-1vilJfPf3+uGoYi1douM75iTfu/8MsbSSECH5MN15cA="
+        },
+        {
+          "Name": "label",
+          "Value": "_content/Syncfusion.Blazor.Core/scripts/popup.min.js"
+        }
+      ]
+    },
+    {
+      "Route": "_content/Syncfusion.Blazor.Core/scripts/popupsbase.min.js",
+      "AssetFile": "C:\\Users\\amina\\.nuget\\packages\\syncfusion.blazor.core\\29.1.39\\staticwebassets\\scripts\\popupsbase.min.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "14236"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"pKr0AoVoemoP7bIAuaF6lO0sKFhGydmxKVIq1Vi+Z/A=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 21 Apr 2025 09:36:57 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-pKr0AoVoemoP7bIAuaF6lO0sKFhGydmxKVIq1Vi+Z/A="
+        }
+      ]
+    },
+    {
+      "Route": "_content/Syncfusion.Blazor.Core/scripts/popupsbase.min.sysg4otwid.js",
+      "AssetFile": "C:\\Users\\amina\\.nuget\\packages\\syncfusion.blazor.core\\29.1.39\\staticwebassets\\scripts\\popupsbase.min.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "14236"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"pKr0AoVoemoP7bIAuaF6lO0sKFhGydmxKVIq1Vi+Z/A=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 21 Apr 2025 09:36:57 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "sysg4otwid"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-pKr0AoVoemoP7bIAuaF6lO0sKFhGydmxKVIq1Vi+Z/A="
+        },
+        {
+          "Name": "label",
+          "Value": "_content/Syncfusion.Blazor.Core/scripts/popupsbase.min.js"
+        }
+      ]
+    },
+    {
+      "Route": "_content/Syncfusion.Blazor.Core/scripts/sf-svg-export.min.0b1xc29ndt.js",
+      "AssetFile": "C:\\Users\\amina\\.nuget\\packages\\syncfusion.blazor.core\\29.1.39\\staticwebassets\\scripts\\sf-svg-export.min.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "14205"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"JFefsNh2yTWAI9cPbT81TcHlI0G/ymn/l+QPTu5l/Eo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 21 Apr 2025 09:36:57 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "0b1xc29ndt"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-JFefsNh2yTWAI9cPbT81TcHlI0G/ymn/l+QPTu5l/Eo="
+        },
+        {
+          "Name": "label",
+          "Value": "_content/Syncfusion.Blazor.Core/scripts/sf-svg-export.min.js"
+        }
+      ]
+    },
+    {
+      "Route": "_content/Syncfusion.Blazor.Core/scripts/sf-svg-export.min.js",
+      "AssetFile": "C:\\Users\\amina\\.nuget\\packages\\syncfusion.blazor.core\\29.1.39\\staticwebassets\\scripts\\sf-svg-export.min.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "14205"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"JFefsNh2yTWAI9cPbT81TcHlI0G/ymn/l+QPTu5l/Eo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 21 Apr 2025 09:36:57 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-JFefsNh2yTWAI9cPbT81TcHlI0G/ymn/l+QPTu5l/Eo="
+        }
+      ]
+    },
+    {
+      "Route": "_content/Syncfusion.Blazor.Core/scripts/svgbase.min.ebngw0l1mg.js",
+      "AssetFile": "C:\\Users\\amina\\.nuget\\packages\\syncfusion.blazor.core\\29.1.39\\staticwebassets\\scripts\\svgbase.min.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "53438"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Copw0b5W1Ixp52X80cARk/2aZMy07y3JSBIybAnfcAQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 21 Apr 2025 09:36:57 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ebngw0l1mg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Copw0b5W1Ixp52X80cARk/2aZMy07y3JSBIybAnfcAQ="
+        },
+        {
+          "Name": "label",
+          "Value": "_content/Syncfusion.Blazor.Core/scripts/svgbase.min.js"
+        }
+      ]
+    },
+    {
+      "Route": "_content/Syncfusion.Blazor.Core/scripts/svgbase.min.js",
+      "AssetFile": "C:\\Users\\amina\\.nuget\\packages\\syncfusion.blazor.core\\29.1.39\\staticwebassets\\scripts\\svgbase.min.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "53438"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Copw0b5W1Ixp52X80cARk/2aZMy07y3JSBIybAnfcAQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 21 Apr 2025 09:36:57 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Copw0b5W1Ixp52X80cARk/2aZMy07y3JSBIybAnfcAQ="
+        }
+      ]
+    },
+    {
+      "Route": "_content/Syncfusion.Blazor.Core/scripts/syncfusion-blazor.min.js",
+      "AssetFile": "C:\\Users\\amina\\.nuget\\packages\\syncfusion.blazor.core\\29.1.39\\staticwebassets\\scripts\\syncfusion-blazor.min.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4538506"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"mugELBrmi7H6ys7+wuOVK1Vkv8DHINPvChKubLUeu70=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 21 Apr 2025 09:36:58 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-mugELBrmi7H6ys7+wuOVK1Vkv8DHINPvChKubLUeu70="
+        }
+      ]
+    },
+    {
+      "Route": "_content/Syncfusion.Blazor.Core/scripts/syncfusion-blazor.min.qvvogk8cj5.js",
+      "AssetFile": "C:\\Users\\amina\\.nuget\\packages\\syncfusion.blazor.core\\29.1.39\\staticwebassets\\scripts\\syncfusion-blazor.min.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4538506"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"mugELBrmi7H6ys7+wuOVK1Vkv8DHINPvChKubLUeu70=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 21 Apr 2025 09:36:58 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "qvvogk8cj5"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-mugELBrmi7H6ys7+wuOVK1Vkv8DHINPvChKubLUeu70="
+        },
+        {
+          "Name": "label",
+          "Value": "_content/Syncfusion.Blazor.Core/scripts/syncfusion-blazor.min.js"
+        }
+      ]
+    },
+    {
+      "Route": "_content/Syncfusion.Blazor.Core/scripts/syncfusion-blazor-base.min.ijyue7vok3.js",
+      "AssetFile": "C:\\Users\\amina\\.nuget\\packages\\syncfusion.blazor.core\\29.1.39\\staticwebassets\\scripts\\syncfusion-blazor-base.min.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "254060"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"orsPHLWmoRWO1De1XEAERnWWkCpJpJZtShmeIEEScPI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 21 Apr 2025 09:36:58 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ijyue7vok3"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-orsPHLWmoRWO1De1XEAERnWWkCpJpJZtShmeIEEScPI="
+        },
+        {
+          "Name": "label",
+          "Value": "_content/Syncfusion.Blazor.Core/scripts/syncfusion-blazor-base.min.js"
+        }
+      ]
+    },
+    {
+      "Route": "_content/Syncfusion.Blazor.Core/scripts/syncfusion-blazor-base.min.js",
+      "AssetFile": "C:\\Users\\amina\\.nuget\\packages\\syncfusion.blazor.core\\29.1.39\\staticwebassets\\scripts\\syncfusion-blazor-base.min.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "254060"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"orsPHLWmoRWO1De1XEAERnWWkCpJpJZtShmeIEEScPI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 21 Apr 2025 09:36:58 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-orsPHLWmoRWO1De1XEAERnWWkCpJpJZtShmeIEEScPI="
+        }
+      ]
+    },
+    {
+      "Route": "_content/Syncfusion.Blazor.Data/scripts/data.min.dnjmjdm2mo.js",
+      "AssetFile": "C:\\Users\\amina\\.nuget\\packages\\syncfusion.blazor.data\\29.1.39\\staticwebassets\\scripts\\data.min.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "91336"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"B8zwnvK60ijeNNoCaiDbjR50r3bLA+DaXfbUL4/ELWs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 21 Apr 2025 09:36:57 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "dnjmjdm2mo"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-B8zwnvK60ijeNNoCaiDbjR50r3bLA+DaXfbUL4/ELWs="
+        },
+        {
+          "Name": "label",
+          "Value": "_content/Syncfusion.Blazor.Data/scripts/data.min.js"
+        }
+      ]
+    },
+    {
+      "Route": "_content/Syncfusion.Blazor.Data/scripts/data.min.js",
+      "AssetFile": "C:\\Users\\amina\\.nuget\\packages\\syncfusion.blazor.data\\29.1.39\\staticwebassets\\scripts\\data.min.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "91336"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"B8zwnvK60ijeNNoCaiDbjR50r3bLA+DaXfbUL4/ELWs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 21 Apr 2025 09:36:57 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-B8zwnvK60ijeNNoCaiDbjR50r3bLA+DaXfbUL4/ELWs="
+        }
+      ]
+    },
     {
       "Route": "css/site.c2tiyv64ts.css",
       "AssetFile": "C:\\Users\\amina\\source\\repos\\Spend\\SmartTempDashboard\\wwwroot\\css\\site.css",
@@ -6263,7 +7190,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 14 Apr 2025 13:43:30 GMT"
+          "Value": "Mon, 28 Apr 2025 15:34:23 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6300,7 +7227,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 14 Apr 2025 13:43:30 GMT"
+          "Value": "Mon, 28 Apr 2025 15:34:23 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6345,7 +7272,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 14 Apr 2025 13:43:30 GMT"
+          "Value": "Mon, 28 Apr 2025 15:34:23 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6390,7 +7317,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 14 Apr 2025 13:43:30 GMT"
+          "Value": "Mon, 28 Apr 2025 15:34:23 GMT"
         },
         {
           "Name": "Cache-Control",
