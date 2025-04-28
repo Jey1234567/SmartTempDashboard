@@ -1,4 +1,4 @@
-📈 SmartTempDashboard (ASP.NET MVC and IOT)
+📈 Real-Time Temperature Dashboard (ASP.NET MVC and IOT)
 
 ![grafik](https://github.com/user-attachments/assets/6a88bd58-97a4-458b-942d-6c2dd68cbf9f)
 
@@ -25,4 +25,8 @@ A real-time Temperature Graph Dashboard built with ASP.NET CORE MVC, SignalR, an
 4. Set the database (SQL Server) with the project under Program.cs
 5. Build and Run the Project
 
-![grafik](https://github.com/user-attachments/assets/bfd1a6f2-a8d7-42cf-8dff-dd4c7631b471)
+
+![grafik](https://github.com/user-attachments/assets/41c1a12d-b0c5-478b-86b5-80677ab22b29)
+
+
+
