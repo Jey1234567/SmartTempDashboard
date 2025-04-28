@@ -1,4 +1,4 @@
-📈 Real-Time Temperature Dashboard (ASP.NET MVC and IOT)
+# 📈 Real-Time Temperature Dashboard (ASP.NET MVC and IOT)
 
 ![grafik](https://github.com/user-attachments/assets/6a88bd58-97a4-458b-942d-6c2dd68cbf9f)
 
