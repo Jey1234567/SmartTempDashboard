@@ -26,6 +26,7 @@ A real-time Temperature Graph Dashboard built with ASP.NET CORE MVC, SignalR, an
 5. Build and Run the Project
 
 
+# 🏛️ System Architecture
 ![grafik](https://github.com/user-attachments/assets/41c1a12d-b0c5-478b-86b5-80677ab22b29)
 
 
