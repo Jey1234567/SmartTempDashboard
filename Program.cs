@@ -13,7 +13,8 @@ builder.Services.AddRazorPages().AddRazorRuntimeCompilation();
 //For Entity Framework MSQL Connection
 builder.Services.AddDbContext<TemperatureDBContext>(options =>
 {
-    options.UseSqlServer("Server=JEYHANCUTE\\SQLEXPRESS;Database=TemperatureDB;Trusted_Connection=True;TrustServerCertificate=True;");
+    //Change to your SQL Server Name
+    options.UseSqlServer("Server=ServerName\\SQLEXPRESS;Database=TemperatureDB;Trusted_Connection=True;TrustServerCertificate=True;");
 });
 
 builder.Services.AddEndpointsApiExplorer();
