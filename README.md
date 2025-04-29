@@ -21,7 +21,7 @@ A real-time Temperature Graph Dashboard built with ASP.NET CORE MVC, SignalR, an
 ⚙️ How to Run
 1. Clone The Repository SmartTempDashboard and ArduinoCode-NODEMCU
 2. Upload the code to your NodeMCU (See the README File in the Repo ArduinoCode-NODEMCU to connect the cables between NODEMCU and DHT-11 Sensor)
-3. Ensure your NodeMCU sends data to: POST http://<your-server>/api/temperature/temperaturepost
+3. Ensure your NodeMCU sends data to: POST http://192.168.xxx.xx:xxxx/api/temperature/temperaturepost
 4. Set the database (SQL Server) with the project under Program.cs
 5. Build and Run the Project
 
