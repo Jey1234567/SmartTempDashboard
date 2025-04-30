@@ -1,6 +1,7 @@
 # 📈🌡️ Real-Time Temperature Dashboard (ASP.NET MVC and IOT)
 
-![grafik](https://github.com/user-attachments/assets/6a88bd58-97a4-458b-942d-6c2dd68cbf9f)
+![grafik](https://github.com/user-attachments/assets/5b938c89-a1b8-4bed-add2-e51418cfbbeb)
+
 
 A real-time Temperature Graph Dashboard built with ASP.NET CORE MVC, SignalR, and Chart.js. Data is collected using a NodeMCU ESP8266 + DHT11 Sensor sent with REST API, and visualized dynamically on a web dashboard.
 
