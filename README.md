@@ -1,6 +1,5 @@
 # 📈🌡️ Real-Time Temperature Dashboard (ASP.NET MVC and IOT)
 
-![grafik](https://github.com/user-attachments/assets/5b938c89-a1b8-4bed-add2-e51418cfbbeb)
 ![grafik](https://github.com/user-attachments/assets/6fd2be0d-2537-45dd-ae93-f7cda17a4ba1)
 
 
