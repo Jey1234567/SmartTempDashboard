@@ -1,10 +1,10 @@
 ﻿@{
     ViewData["Title"] = "Home Page";
 }
-@model List<SmartTempDashboard.Models.Temperature>
 
 
-<h2>Graph</h2>
+<h2>Live Graph</h2>
+<h2>Aktuelle Temperatur: <span id="liveTemp">-- °C</span></h2>
 <canvas id="TemperatureChart" width="800" height="400"></canvas>
 <!--Use Chartjs and SignalR for dynamic graph-->
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -47,9 +47,11 @@
         .build();
 
     connection.on("ReceiveTemperature", function (temp) {
-        
+        //Update temperature text
+        document.getElementById("liveTemp").innerText = `${temp.temp} °C`;
+
+        //Convert timestamp
         var timestamp=new Date(temp.timestamp).toLocaleTimeString();
-          
         // Update your chart dynamically here
         addDataToChart(timestamp, temp.temp);
     });
