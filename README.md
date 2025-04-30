@@ -16,7 +16,7 @@ A real-time Temperature Graph Dashboard built with ASP.NET CORE MVC, SignalR, an
 🛠️ Tech Stack
 1. ASP.NET Core MVC (.NET 8)
 2. SignalR (Real-Time Communication)
-3. Entity Framework Core (SQL Server Database)
+3. Entity Framework Core (MS SQL Server Database)
 4. Chart.js (Frontend charting library)
 5. NodeMCU ESP8266 (Microcontroller)
 6. DHT11 (Temperature & Humidity Sensor)
@@ -25,7 +25,7 @@ A real-time Temperature Graph Dashboard built with ASP.NET CORE MVC, SignalR, an
 1. Clone The Repository SmartTempDashboard and ArduinoCode-NODEMCU
 2. Upload the code to your NodeMCU (See the README File in the Repo ArduinoCode-NODEMCU to connect the cables between NODEMCU and DHT-11 Sensor)
 3. Ensure your NodeMCU sends data to: POST http://192.168.xxx.xx:xxxx/api/temperature/temperaturepost
-4. Set the database (SQL Server) with the project under Program.cs
+4. Set the database Server Name (MS SQL Server) with the project under Program.cs
 5. Build and Run the Project
 
 
