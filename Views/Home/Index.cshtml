@@ -1,10 +1,31 @@
 ﻿@{
     ViewData["Title"] = "Home Page";
 }
+<style>
+    .temp-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: linear-gradient(to right, #00c6ff, #0072ff);
+        color: white;
+        padding: 1rem 1.5rem;
+        border-radius: 12px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        margin-bottom: 1rem;
 
+    }
 
-<h2>Live Graph</h2>
-<h2>Aktuelle Temperatur: <span id="liveTemp">-- °C</span></h2>
+    .temp-value span {
+        font-weight: bold;
+        font-size: 1.6rem;
+    }
+</style>
+</style>
+<div class="temp-header">
+    <h2>🌡️ Live Graph</h2>
+    <h2 class="temp-value" >Aktuelle Temperatur: <span id="liveTemp">-- °C</span></h2>
+</div>
+
 <canvas id="TemperatureChart" width="800" height="400"></canvas>
 <!--Use Chartjs and SignalR for dynamic graph-->
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -19,6 +40,9 @@
      var values = latest.map(x => x.Temp);
 
     var ctx = document.getElementById('TemperatureChart').getContext('2d');
+    const gradient = ctx.createLinearGradient(0, 0, 0, 400);
+    gradient.addColorStop(0, "rgba(75,192,192,1)");
+    gradient.addColorStop(1, "rgba(75,192,192,0)");
     window.myChart = new Chart(ctx, {
         type: 'line',
         data: {
@@ -27,6 +51,7 @@
                 label: 'Temperature (°C)',
                 data: values,
                 borderColor: 'rgb(75, 192, 192)',
+                backgroundColor: gradient,
                 fill: false,
                 tension: 0.4
             }]
@@ -35,7 +60,11 @@
             responsive: true,
             scales: {
                 y: {
-                    beginAtZero: false
+                    beginAtZero: false,
+                    title: {
+                     display: true,
+                     text: 'Temperature (°C)'
+                    }
                 }
             }
         }

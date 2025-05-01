@@ -9,7 +9,7 @@ namespace SmartTempDashboard.Controllers;
 public class HomeController : Controller
 {
     private readonly ILogger<HomeController> _logger;
-    Uri baseAddress = new Uri("http://192.168.xxx.xx:xxxx/api");
+    Uri baseAddress = new Uri("http://192.168.178.24:7111/api");
     private readonly HttpClient _client;
     public HomeController(ILogger<HomeController> logger)
     {
