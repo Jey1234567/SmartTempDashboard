@@ -2,42 +2,35 @@
     ViewData["Title"] = "Home Page";
 }
 
-<style>
-    
-    .temp-header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        background: linear-gradient(to right, #00c6ff, #0072ff);
-        color: white;
-        padding: 1rem 1.5rem;
-        border-radius: 12px;
-        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-        margin-bottom: 1rem;
-
-    }
-
-    .temp-value span {
-        font-weight: bold;
-        font-size: 1.6rem;
-    }
 
 
+<div class="dashboard-container">
+    <div class="main-chart">
+        <div class="temp-header">
+            <h2>🌡️ Live Graph</h2>
+            <h2 class="temp-value">Current Temperature: <span id="liveTemp">-- °C</span></h2>
+        </div>
+        <canvas id="TemperatureChart" ></canvas>
+    </div>
+    <div class="side-chart">
+        <h3>🌤️ Average Temperature Over the Last 3 Days</h3>
+        <canvas id="avg3Chart"></canvas>
 
-</style>
-
-<div class="temp-header">
-    <h2>🌡️ Live Graph</h2>
-    <h2 class="temp-value" >Aktuelle Temperatur: <span id="liveTemp">-- °C</span></h2>
+    </div>
 </div>
 
-<canvas id="TemperatureChart" width="800" height="400"></canvas>
+
+
+
+
 <!--Use Chartjs and SignalR for dynamic graph-->
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/microsoft-signalr/7.0.5/signalr.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 <script>
     window.onload= function () {
+        fetch3DayAvg();
+     //line chart for temperature chart
     var suhuData = @Html.Raw(System.Text.Json.JsonSerializer.Serialize(Model));
 
      var latest = suhuData.slice(-30); // get last 30 entries
@@ -51,7 +44,7 @@
     window.myChart = new Chart(ctx, {
         type: 'line',
         data: {
-            labels: labels, // empty initially
+            labels: labels,
             datasets: [{
                 label: 'Temperature (°C)',
                 data: values,
@@ -113,5 +106,48 @@
 
     }
 
+    let avgChart;
+        function fetch3DayAvg(){
+        $.ajax({
+            url: 'api/Temperature/Average3Days',
+            method: 'get',
+            success: function (data){
+                const labels = data.map(x => x.day);
+                const values = data.map(x => x.avgtemp);
+
+                if (avgChart) {
+                    avgChart.data.labels = labels;
+                    avgChart.data.datasets[0].data = values;
+                    avgChart.update();
+                } else {
+                    var barCtx = document.getElementById('avg3Chart').getContext('2d');
+                    avgChart = new Chart(barCtx, {
+                        type: 'bar',
+                        data: {
+                            labels: labels,
+                            datasets: [{
+                                label: 'Average °C',
+                                data: values,
+                                backgroundColor: ['#36a2eb', '#4bc0c0', '#9966ff']
+                            }]
+                        },
+                        options: {
+                            indexAxis: 'y',
+                            responsive: true
+                        }
+                    });
+                }
+            },
+            error: function (xhr, status, err) {
+                console.error("❌ Failed to fetch 3-day average:", err);
+            }
+        });
+    }
+
+      
 </script>
+
+
+
+
 

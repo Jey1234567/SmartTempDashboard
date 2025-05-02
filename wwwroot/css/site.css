@@ -20,3 +20,72 @@ html {
 body {
   margin-bottom: 60px;
 }
+
+
+footer {
+    background-color: #f9f9f9;
+    padding: 1rem 0;
+    text-align: center;
+    font-size: 0.9rem;
+    color: #777;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f8f9fa;
+}
+
+main {
+    flex: 1;
+}
+
+
+.dashboard-container {
+    max-width: 1800px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 20px;
+    padding: 20px;
+    align-items: start;
+}
+
+.temp-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(to right, #00c6ff, #0072ff);
+    color: white;
+    padding: 1.2rem 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    margin-bottom: 1rem;
+}
+
+    .temp-header h2 {
+        margin: 0;
+        font-size: 1.4rem;
+    }
+
+.temp-value span {
+    font-weight: bold;
+    font-size: 1.8rem;
+}
+
+.main-chart, .side-chart {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+    .side-chart h3 {
+        margin-top: 0;
+        text-align:center
+    }

@@ -47,6 +47,18 @@
           }
         }
       }
+    },
+    "/api/Temperature/Average3Days": {
+      "get": {
+        "tags": [
+          "Temperature"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
     }
   },
   "components": {

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "HxBahrMkq+4B8LYm0CFxRyZx9IVuOdlmBWUW5kffYXI=",
+  "Hash": "pkAgpyNVo2bhIrg79nVCWjSnjEzdB9JMuft3AjnLHpU=",
   "Source": "SmartTempDashboard",
   "BasePath": "_content/SmartTempDashboard",
   "Mode": "Default",
@@ -262,8 +262,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "c2tiyv64ts",
-      "Integrity": "pAGv4ietcJNk/EwsQZ5BN9+K4MuNYS2a9wl4Jw+q9D0=",
+      "Fingerprint": "c5x2e3dl4c",
+      "Integrity": "UN6bEWBIDz8bKUoCKjp+BmjzOEYq3EKgS0e8TdT722Q=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\site.css"
@@ -2248,7 +2248,7 @@
       ]
     },
     {
-      "Route": "css/site.c2tiyv64ts.css",
+      "Route": "css/site.c5x2e3dl4c.css",
       "AssetFile": "C:\\Users\\amina\\source\\repos\\Spend\\SmartTempDashboard\\wwwroot\\css\\site.css",
       "Selectors": [],
       "ResponseHeaders": [
@@ -2258,7 +2258,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "362"
+          "Value": "1576"
         },
         {
           "Name": "Content-Type",
@@ -2266,11 +2266,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"pAGv4ietcJNk/EwsQZ5BN9+K4MuNYS2a9wl4Jw+q9D0=\""
+          "Value": "\"UN6bEWBIDz8bKUoCKjp+BmjzOEYq3EKgS0e8TdT722Q=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 14 Apr 2025 12:57:24 GMT"
+          "Value": "Fri, 02 May 2025 21:44:34 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2280,7 +2280,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "c2tiyv64ts"
+          "Value": "c5x2e3dl4c"
         },
         {
           "Name": "label",
@@ -2288,7 +2288,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-pAGv4ietcJNk/EwsQZ5BN9+K4MuNYS2a9wl4Jw+q9D0="
+          "Value": "sha256-UN6bEWBIDz8bKUoCKjp+BmjzOEYq3EKgS0e8TdT722Q="
         }
       ]
     },
@@ -2303,7 +2303,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "362"
+          "Value": "1576"
         },
         {
           "Name": "Content-Type",
@@ -2311,11 +2311,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"pAGv4ietcJNk/EwsQZ5BN9+K4MuNYS2a9wl4Jw+q9D0=\""
+          "Value": "\"UN6bEWBIDz8bKUoCKjp+BmjzOEYq3EKgS0e8TdT722Q=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 14 Apr 2025 12:57:24 GMT"
+          "Value": "Fri, 02 May 2025 21:44:34 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2325,7 +2325,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-pAGv4ietcJNk/EwsQZ5BN9+K4MuNYS2a9wl4Jw+q9D0="
+          "Value": "sha256-UN6bEWBIDz8bKUoCKjp+BmjzOEYq3EKgS0e8TdT722Q="
         }
       ]
     },

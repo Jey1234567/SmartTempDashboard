@@ -1,6 +1,16 @@
 [
   {
     "ContainingType": "SmartTempDashboard.Controllers.Api.TemperatureController",
+    "Method": "Average3Days",
+    "RelativePath": "api/Temperature/Average3Days",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SmartTempDashboard.Controllers.Api.TemperatureController",
     "Method": "GetData",
     "RelativePath": "api/Temperature/GetData",
     "HttpMethod": "GET",
