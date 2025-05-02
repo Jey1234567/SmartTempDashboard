@@ -14,7 +14,7 @@ builder.Services.AddRazorPages().AddRazorRuntimeCompilation();
 builder.Services.AddDbContext<TemperatureDBContext>(options =>
 {
     //Change to your SQL Server Name
-    options.UseSqlServer("Server=SERVERNAME\\SQLEXPRESS;Database=TemperatureDB;Trusted_Connection=True;TrustServerCertificate=True;");
+    options.UseSqlServer("Server=JEYHANCUTE\\SQLEXPRESS;Database=TemperatureDB;Trusted_Connection=True;TrustServerCertificate=True;");
 });
 
 builder.Services.AddEndpointsApiExplorer();

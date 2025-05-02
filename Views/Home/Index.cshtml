@@ -1,7 +1,9 @@
 ﻿@{
     ViewData["Title"] = "Home Page";
 }
+
 <style>
+    
     .temp-header {
         display: flex;
         justify-content: space-between;
@@ -19,8 +21,11 @@
         font-weight: bold;
         font-size: 1.6rem;
     }
+
+
+
 </style>
-</style>
+
 <div class="temp-header">
     <h2>🌡️ Live Graph</h2>
     <h2 class="temp-value" >Aktuelle Temperatur: <span id="liveTemp">-- °C</span></h2>
@@ -76,6 +81,8 @@
         .build();
 
     connection.on("ReceiveTemperature", function (temp) {
+        
+
         //Update temperature text
         document.getElementById("liveTemp").innerText = `${temp.temp} °C`;
 
