@@ -46,8 +46,8 @@
 
     var ctx = document.getElementById('TemperatureChart').getContext('2d');
     const gradient = ctx.createLinearGradient(0, 0, 0, 400);
-    gradient.addColorStop(0, "rgba(75,192,192,1)");
-    gradient.addColorStop(1, "rgba(75,192,192,0)");
+    gradient.addColorStop(0, 'rgba(0, 200, 255, 1)');
+    gradient.addColorStop(1, 'rgba(0, 100, 255, 1)');
     window.myChart = new Chart(ctx, {
         type: 'line',
         data: {
@@ -57,6 +57,9 @@
                 data: values,
                 borderColor: 'rgb(75, 192, 192)',
                 backgroundColor: gradient,
+                borderWidth: 4,
+                pointRadius: 4,
+                pointBackgroundColor: 'black',
                 fill: false,
                 tension: 0.4
             }]
