@@ -15,10 +15,11 @@ A real-time Temperature Graph Dashboard built with ASP.NET CORE MVC, SignalR, an
 🛠️ Tech Stack
 1. ASP.NET Core MVC (.NET 8)
 2. SignalR (Real-Time Communication)
-3. Entity Framework Core (MS SQL Server Database)
-4. Chart.js (Frontend charting library)
-5. NodeMCU ESP8266 (Microcontroller)
-6. DHT11 (Temperature & Humidity Sensor)
+3. AJAX (Asynchronous JavaScript and XML) – Fetches 3-day average temperature data from the backend without reloading the page
+4. Entity Framework Core (MS SQL Server Database)
+5. Chart.js (Frontend charting library)
+6. NodeMCU ESP8266 (Microcontroller)
+7. DHT11 (Temperature & Humidity Sensor)
 
 ⚙️ How to Run
 1. Clone The Repository SmartTempDashboard and ArduinoCode-NODEMCU
