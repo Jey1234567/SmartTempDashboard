@@ -1,6 +1,6 @@
 # 📈🌡️ Real-Time Temperature Dashboard (ASP.NET MVC and IOT)
 
-![Live Graph](media/Animation.gif)
+![Live Graph](media/Animation5.gif)
 (Every 5 s)
 
 
