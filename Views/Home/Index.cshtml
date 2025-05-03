@@ -7,15 +7,25 @@
 <div class="dashboard-container">
     <div class="main-chart">
         <div class="temp-header">
-            <h2>🌡️ Live Graph</h2>
+            <h2>🌡️ Live Temperature Graph</h2>
             <h2 class="temp-value">Current Temperature: <span id="liveTemp">-- °C</span></h2>
         </div>
         <canvas id="TemperatureChart" ></canvas>
     </div>
-    <div class="side-chart">
-        <h3>🌤️ Average Temperature Over the Last 3 Days</h3>
-        <canvas id="avg3Chart"></canvas>
-
+    <div class="right-charts">
+        <div class="side-chart">
+            <h3>🌤️ Average Temperature Over the Last 3 Days</h3>
+            <br />
+            <canvas id="avg3Chart"></canvas>
+        </div>
+        <div class="side-chart">
+            <h3>💧 Live Humidity Graph</h3>
+            <canvas id="HumidityChart"></canvas>
+            <br />
+            <div class="humid-header">
+                <h2 class="humid-value">Current Humidity: <span id="liveHumid">-- %</span></h2>
+            </div>
+        </div>
     </div>
 </div>
 
@@ -29,13 +39,50 @@
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 <script>
     window.onload= function () {
+    //Calling function ajax for 3 days Average
         fetch3DayAvg();
-     //line chart for temperature chart
-    var suhuData = @Html.Raw(System.Text.Json.JsonSerializer.Serialize(Model));
 
-     var latest = suhuData.slice(-30); // get last 30 entries
-     var labels = latest.map(x => new Date(x.Timestamp).toLocaleTimeString());
-     var values = latest.map(x => x.Temp);
+
+     //line chart for humidity
+    var Humctx = document.getElementById('HumidityChart').getContext('2d');
+    const gradientHum = Humctx.createLinearGradient(0, 0, 0, 400);
+    gradientHum.addColorStop(0, 'rgba(255, 204, 102, 1)');
+    gradientHum.addColorStop(1, 'rgba(255, 102, 102, 1)');
+
+    var HumidityData = @Html.Raw(System.Text.Json.JsonSerializer.Serialize(Model));
+    var latestHum = HumidityData.slice(-10); // get last 10 entries
+    var labelsHum = latestHum.map(x => new Date(x.Timestamp).toLocaleTimeString());
+    var valuesHum = latestHum.map(x => x.Humid);
+    window.myChartHumid = new Chart(Humctx, {
+      type: "line",
+      data : {
+            labels: labelsHum,
+            datasets: [{
+                label: 'Humidity %',
+                data: valuesHum,
+                borderColor: 'rgb(75, 192, 192)',
+                backgroundColor: gradientHum,
+                borderWidth: 4,
+                pointRadius: 4,
+                fill: false,
+                tension: 0.4
+            }]
+        },
+        options : {
+            title : {
+                display : true,
+                text : 'Chart JS Line Chart Example'
+            }
+        }
+    });
+
+
+     //line chart for temperature chart
+    var TemperatureData = @Html.Raw(System.Text.Json.JsonSerializer.Serialize(Model));
+
+    var latest = TemperatureData.slice(-30); // get last 30 entries
+    var labels = latest.map(x => new Date(x.Timestamp).toLocaleTimeString());
+    var values = latest.map(x => x.Temp);
 
     var ctx = document.getElementById('TemperatureChart').getContext('2d');
     const gradient = ctx.createLinearGradient(0, 0, 0, 400);
@@ -52,7 +99,6 @@
                 backgroundColor: gradient,
                 borderWidth: 4,
                 pointRadius: 4,
-                pointBackgroundColor: 'black',
                 fill: false,
                 tension: 0.4
             }]
@@ -79,20 +125,31 @@
     connection.on("ReceiveTemperature", function (temp) {
         
 
-        //Update temperature text
+        //Update current temperature & humidity text
         document.getElementById("liveTemp").innerText = `${temp.temp} °C`;
-
+        document.getElementById("liveHumid").innerText = `${temp.humid} %`;
+        
         //Convert timestamp
         var timestamp=new Date(temp.timestamp).toLocaleTimeString();
         // Update your chart dynamically here
-        addDataToChart(timestamp, temp.temp);
+        addDataToChart(timestamp, temp.temp, temp.humid);
     });
 
     connection.start();
 
-    function addDataToChart(timestamp, temperature) {
+    function addDataToChart(timestamp, temperature,humidity) {
      
-        
+        myChartHumid.data.labels.push(timestamp);
+        myChartHumid.data.datasets[0].data.push(humidity);
+
+        if (myChartHumid.data.labels.length > 9) {
+            myChartHumid.data.labels.shift();
+            myChartHumid.data.datasets[0].data.shift();
+        }
+
+        myChartHumid.update();
+
+        //Temperature Chart
         myChart.data.labels.push(timestamp);
         myChart.data.datasets[0].data.push(temperature);
         
@@ -105,7 +162,7 @@
     }
 
     }
-
+    //Ajax Function for 3 days Avg
     let avgChart;
         function fetch3DayAvg(){
         $.ajax({
@@ -144,8 +201,10 @@
         });
     }
 
+   
       
 </script>
+
 
 
 

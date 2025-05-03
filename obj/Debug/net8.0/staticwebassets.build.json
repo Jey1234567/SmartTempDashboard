@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "pkAgpyNVo2bhIrg79nVCWjSnjEzdB9JMuft3AjnLHpU=",
+  "Hash": "6Td53lciSJq00QGG+XL66e1wU2NSPUwLcLoNtCR1ITE=",
   "Source": "SmartTempDashboard",
   "BasePath": "_content/SmartTempDashboard",
   "Mode": "Default",
@@ -262,8 +262,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "c5x2e3dl4c",
-      "Integrity": "UN6bEWBIDz8bKUoCKjp+BmjzOEYq3EKgS0e8TdT722Q=",
+      "Fingerprint": "v9n0idhlhd",
+      "Integrity": "02uIiQPrVH9csF+29TbKGf8n+n0J4hfEu950OViVBlY=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\site.css"
@@ -2248,51 +2248,6 @@
       ]
     },
     {
-      "Route": "css/site.c5x2e3dl4c.css",
-      "AssetFile": "C:\\Users\\amina\\source\\repos\\Spend\\SmartTempDashboard\\wwwroot\\css\\site.css",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "1576"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"UN6bEWBIDz8bKUoCKjp+BmjzOEYq3EKgS0e8TdT722Q=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 02 May 2025 21:44:34 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "c5x2e3dl4c"
-        },
-        {
-          "Name": "label",
-          "Value": "css/site.css"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-UN6bEWBIDz8bKUoCKjp+BmjzOEYq3EKgS0e8TdT722Q="
-        }
-      ]
-    },
-    {
       "Route": "css/site.css",
       "AssetFile": "C:\\Users\\amina\\source\\repos\\Spend\\SmartTempDashboard\\wwwroot\\css\\site.css",
       "Selectors": [],
@@ -2303,7 +2258,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1576"
+          "Value": "2044"
         },
         {
           "Name": "Content-Type",
@@ -2311,11 +2266,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"UN6bEWBIDz8bKUoCKjp+BmjzOEYq3EKgS0e8TdT722Q=\""
+          "Value": "\"02uIiQPrVH9csF+29TbKGf8n+n0J4hfEu950OViVBlY=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 02 May 2025 21:44:34 GMT"
+          "Value": "Sat, 03 May 2025 13:55:00 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2325,7 +2280,52 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-UN6bEWBIDz8bKUoCKjp+BmjzOEYq3EKgS0e8TdT722Q="
+          "Value": "sha256-02uIiQPrVH9csF+29TbKGf8n+n0J4hfEu950OViVBlY="
+        }
+      ]
+    },
+    {
+      "Route": "css/site.v9n0idhlhd.css",
+      "AssetFile": "C:\\Users\\amina\\source\\repos\\Spend\\SmartTempDashboard\\wwwroot\\css\\site.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2044"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"02uIiQPrVH9csF+29TbKGf8n+n0J4hfEu950OViVBlY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 03 May 2025 13:55:00 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "v9n0idhlhd"
+        },
+        {
+          "Name": "label",
+          "Value": "css/site.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-02uIiQPrVH9csF+29TbKGf8n+n0J4hfEu950OViVBlY="
         }
       ]
     },

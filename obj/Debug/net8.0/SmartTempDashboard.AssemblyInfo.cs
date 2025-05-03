@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SmartTempDashboard")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0ce50c9d6eed0d48d6e9bb8821aef98987269253")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e4b7d5486f9ca726af34646f3980f927f6938d90")]
 [assembly: System.Reflection.AssemblyProductAttribute("SmartTempDashboard")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SmartTempDashboard")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

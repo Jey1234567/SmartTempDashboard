@@ -30,6 +30,9 @@ namespace SmartTempDashboard.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
+                    b.Property<float>("Humid")
+                        .HasColumnType("real");
+
                     b.Property<float>("Temp")
                         .HasColumnType("real");
 

@@ -74,6 +74,10 @@
             "type": "number",
             "format": "float"
           },
+          "humid": {
+            "type": "number",
+            "format": "float"
+          },
           "timestamp": {
             "type": "string",
             "format": "date-time"

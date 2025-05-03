@@ -9,6 +9,8 @@ namespace SmartTempDashboard.Models
 
         public float Temp { get; set; }
 
+        public float Humid { get; set; }
+
         public DateTime Timestamp { get; set; }
     }
 }
