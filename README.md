@@ -6,7 +6,7 @@
 (Every 5 s)
 
 
-A real-time Temperature Graph Dashboard built with ASP.NET CORE MVC, SignalR, and Chart.js. Data is collected using a NodeMCU ESP8266 + DHT11 Sensor sent with REST API, and visualized dynamically on a web dashboard.
+A real-time Temperature Graph Dashboard and a full-stack IoT Project built with ASP.NET CORE MVC, SignalR, and Chart.js. Data is collected using a NodeMCU ESP8266 + DHT11 Sensor sent with REST API, and visualized dynamically on a web dashboard.
 
 🚀 Features
 1. Real-time updates with SignalR
