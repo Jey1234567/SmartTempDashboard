@@ -1,4 +1,6 @@
 # 📈🌡️ Real-Time Temperature and 💧 Humidity Dashboard (ASP.NET MVC and IOT)
+🖥️ Live Demo:  
+🔗 [https://render-smarttempdashboard.onrender.com](https://render-smarttempdashboard.onrender.com)
 
 ![Live Graph](media/Animation5.gif)
 (Every 5 s)
