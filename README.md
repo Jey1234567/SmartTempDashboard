@@ -18,7 +18,7 @@ A real-time Temperature Graph Dashboard built with ASP.NET CORE MVC, SignalR, an
 1. ASP.NET Core MVC (.NET 8)
 2. SignalR (Real-Time Communication)
 3. AJAX (Asynchronous JavaScript and XML) – Fetches 3-day average temperature data from the backend without reloading the page
-4. Entity Framework Core (MS SQL Server Database)
+4. Entity Framework Core (MS SQL Server Express Database) / Online Version (Postgresql)
 5. Chart.js (Frontend charting library)
 6. NodeMCU ESP8266 (Microcontroller)
 7. DHT11 (Temperature & Humidity Sensor)
