@@ -120,6 +120,7 @@
     // Connect to SignalR Hub
         const connection = new signalR.HubConnectionBuilder()
         .withUrl("/charthub")
+        .withAutomaticReconnect()
         .build();
 
     connection.on("ReceiveTemperature", function (temp) {
