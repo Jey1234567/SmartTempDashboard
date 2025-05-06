@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.SignalR;
 using System.Globalization;
 using SmartTempDashboard.Models;
 using SmartTempDashboard.SignalRHubs;
+using SmartTempDashboard.Services;
 
 
 namespace SmartTempDashboard.Controllers.Api
@@ -14,9 +15,11 @@ namespace SmartTempDashboard.Controllers.Api
     {
         private readonly TemperatureDBContext _context;
         private readonly IHubContext<ChartHub> _hubContext;
+        private readonly TemperatureService _service;
 
-        public TemperatureController(TemperatureDBContext context, IHubContext<ChartHub> hubContext)
+        public TemperatureController(TemperatureService service, TemperatureDBContext context, IHubContext<ChartHub> hubContext)
         {
+            _service = service;
             _context = context;
             _hubContext = hubContext;
         }
@@ -24,45 +27,58 @@ namespace SmartTempDashboard.Controllers.Api
         [HttpPost]
         public async Task<IActionResult> TemperaturePost(Temperature temp)
         {
-            temp.Timestamp = DateTime.Now;
-            _context.Temperatures.Add(temp);
-            await _context.SaveChangesAsync();
 
-           
-            // Send to SignalR clients
-            await _hubContext.Clients.All.SendAsync("ReceiveTemperature", temp);
+            try
+            {
+                bool successfull = await _service.SaveTemperatureAsync(temp);
 
-            //Returns the booking (as JSON) along with a 200 OK status code.
-            return Ok();
+                if (!successfull)
+                    return BadRequest("Invalid JSON: 'temp' and 'humid' fields are required.");
+
+                return Ok();
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, new
+                {
+                    error = "Server error while saving data.",
+                    details = ex.InnerException?.Message ?? ex.Message
+                });
+            }
         }
         [HttpGet]
-        public IActionResult GetData()
+        public async Task<IActionResult> GetData()
         {
-
-            var data =  _context.Temperatures.ToList(); 
-            return Ok(data);
+            try
+            {
+                var data = await _service.GetAllData();
+                return Ok(data);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, new
+                {
+                    error = "Failed to fetch temperature data",
+                    details = ex.InnerException?.Message ?? ex.Message
+                });
+            }
         }
         [HttpGet]
         public async Task<IActionResult> Average3Days()
         {
-            //Change the date name from your language to english
-            var language = new CultureInfo("en-EN");
-            //Get Current Date Format : 5/3/2012 00:00.00000
-            var today = DateTime.Today;
-            //Get Date in the past 3 days
-            var threeDaysAgo = today.AddDays(-3);
-
-            var threeDaysTemp = _context.Temperatures.Where(t => t.Timestamp >= threeDaysAgo && t.Timestamp < today).ToList();
-
-            //Group them based on Days
-            var groupDays = threeDaysTemp.GroupBy(t => t.Timestamp.Date).Select(g => new
+            try
             {
-                day = g.Key.ToString("dddd",language),
-                avgtemp = Math.Round(g.Average(t => t.Temp), 1)
-            }).ToList();
-           
-
-            return Ok(groupDays);
+                var groupDays = await _service.GetAverage3DaysAsync();
+                return Ok(groupDays);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, new
+                {
+                    error = "Failed to calculate 3-day average",
+                    details = ex.InnerException?.Message ?? ex.Message
+                });
+            }
         }
 
 
