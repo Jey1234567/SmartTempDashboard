@@ -29,7 +29,7 @@ The Project is containerized using Docker and deployed to Render, with a managed
 ⚙️ How to Run
 1. Clone The Repository SmartTempDashboard and ArduinoCode-NODEMCU
 2. Upload the code to your NodeMCU (See the README File in the Repo ArduinoCode-NODEMCU to connect the cables between NODEMCU and DHT-11 Sensor)
-3. Ensure your NodeMCU sends data to: POST http://192.168.xxx.xx:xxxx/api/temperature/temperaturepost
+3. Ensure your NodeMCU sends data to: POST http://xxxxxx/api/temperature/temperaturepost
 4. Set the database Server Name (MS SQL Server) with the project under Program.cs
 5. Build and Run the Project
 
