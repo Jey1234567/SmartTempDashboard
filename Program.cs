@@ -1,6 +1,7 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.OpenApi.Models;
 using SmartTempDashboard.Models;
+using SmartTempDashboard.Services;
 using SmartTempDashboard.SignalRHubs;
 
 using System.Reflection;
@@ -28,6 +29,7 @@ builder.WebHost.ConfigureKestrel(serverOptions =>
     serverOptions.ListenAnyIP(7111); // <- Add this to support HTTP
 });
 builder.Services.AddSignalR();
+builder.Services.AddScoped<TemperatureService>();
 var app = builder.Build();
 
 
