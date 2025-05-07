@@ -2,6 +2,10 @@
 🖥️ Live Demo:  
 🔗 [https://render-smarttempdashboard.onrender.com](https://render-smarttempdashboard.onrender.com)
 
+❗️The project is deployed on Render using a Docker container and connects to a PostgreSQL database in the deployed environment. The deployment uses a separate private GitHub repository. 
+
+❗️This public repository is intended for local development and testing, where the application is configured to use Microsoft SQL Server Express as the database.
+
 ![Live Graph](media/Animation5.gif)
 (Every 5 s)
 
